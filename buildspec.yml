@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  pre_build:
+    commands:
+    - chmod +x gradlew
+    - ./gradlew clean
+    - echo Pre-build completed on 'data'
+  build:
+    commands:
+    - echo Build completed on date
+    - ./gradlew build
+    - ./gradlew test
+  post_build:
+    commands:
+    - echo Build completed on date
+    - ./gradlew jar
+    - cp build/libs/Gradle-java-spring-boot-0.0.1-SNAPSHOT.jar ROOT.jar
+artifacts:
+  files:
+  - ROOT.jar
