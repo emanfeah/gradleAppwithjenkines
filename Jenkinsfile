@@ -5,9 +5,9 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('Secret_access_key')
         AWS_S3_BUCKET = "eman-a-a"
         ARTIFACT_NAME = "eman.jar"
-        AWS_EB_APP_NAME = "test"
+        AWS_EB_APP_NAME = "eman-app"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "Test-env"
+        AWS_EB_ENVIRONMENT = "Emanapp-env"
         //SONAR_IP = "54.226.50.200"
         //SONAR_TOKEN = "sqp_a70d878110f7f7a1228416febd75ab0b830a48a1"
     }
