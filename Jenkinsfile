@@ -4,7 +4,7 @@ pipeline {
         AWS_ACCESS_KEY_ID = credentials('Access_key_ID')
         AWS_SECRET_ACCESS_KEY = credentials('Secret_access_key')
         AWS_S3_BUCKET = "mvnpeman101"
-        ARTIFACT_NAME = "hello-world.jar"
+        ARTIFACT_NAME = "eman.jar"
         AWS_EB_APP_NAME = "test"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
         AWS_EB_ENVIRONMENT = "Test-env"
